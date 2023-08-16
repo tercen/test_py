@@ -12,8 +12,7 @@ Cell-wise mean calculated implemented in Python.
 * Load the environment and install core requirements by running the following commands in the terminal:
 
 ```bash
-source /config/.pyenv/versions/3.9.0/bin/activate
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 * Develop your operator. Note that you can interact with an existing data step by specifying arguments to the `TercenContext` function:
