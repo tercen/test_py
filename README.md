@@ -27,7 +27,7 @@ tercenCtx = ctx.TercenContext(
     stepId="YOUR_STEP_ID",
     username="admin", # if using the local Tercen instance
     password="admin", # if using the local Tercen instance
-    serviceUri = "http://127.0.0.1:5400/" # if using the local Tercen instance 
+    serviceUri = "http://tercen:5400/" # if using the local Tercen instance 
 )
 ```
 

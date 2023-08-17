@@ -5,11 +5,10 @@ tercenCtx = ctx.TercenContext()
 
 df = (
     tercenCtx
-    .select(['.y', '.ci', '.ri'])
-    .groupby(['.ci','.ri'], as_index=False)
+    .select(['.y', '.ci', '.ri'], df_lib="pandas")
+    .groupby(['.ci','.ri'])
     .mean()
-    .rename(columns={".y":"mean"})
-    .astype({".ci": np.int32, ".ri": np.int32})
+    .rename({".y":"mean"})
 )
 
 df = tercenCtx.add_namespace(df) 
