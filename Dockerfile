@@ -1,6 +1,6 @@
 FROM tercen/runtime-python39:0.2.2
 
-COPY . /operator
+COPY ./src /operator
 WORKDIR /operator
 
 RUN python3 -m pip install -r ./requirements.txt
