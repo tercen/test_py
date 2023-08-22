@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# CHECK Both venv and .venv paths. 
-# TODO Allow user to supply a virtual env name
-# TODO Raise error if multiple venv paths are available
 WD=`pwd`
 
 
@@ -32,10 +29,12 @@ else
     activate
     if [ ! -z requirements.txt ]
     then
-        python3 -m pip install -r tercen_requirements.txt --force
+        python3 -m pip install -r tercen_requirements.txt 
     fi
 
 fi
+
+
 
 
 
