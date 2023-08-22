@@ -1,8 +1,8 @@
 FROM tercen/runtime-python39:0.2.2
 
 COPY ./src /operator
-COPY ./operator.json /operator
-COPY ./requirements.txt /operator
+COPY ./operator.json /operator/operator.json
+COPY ./requirements.txt /operator/requirements.txt
 
 
 WORKDIR /operator
