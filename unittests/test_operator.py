@@ -73,12 +73,11 @@ class TestOperator(unittest.TestCase):
     def test_row_col(self) -> None:
         '''row_col'''
         df = calc_mean(self.context)
-        
-
 
         df = self.context.add_namespace(df.copy()) 
         resDf = self.context.save_dev(df.copy())
 
+        
         assert( not resDf is None )
         assert(resDf.shape == df.shape)
         for i in range(0, len(resDf.columns)):
