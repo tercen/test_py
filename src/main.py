@@ -4,7 +4,7 @@ from operator_funcs import calc_mean
 
 tercenCtx = ctx.TercenContext()
 
-df = calc_mean(tercenCtxteRcen)
+df = calc_mean(tercenCtx)
 
 df = tercenCtx.add_namespace(df) 
 tercenCtx.save(df)
